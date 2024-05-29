@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       <div className="items-center grid grid-cols-3 gap-8 p-4 px-8 bg-stone-900">
-        <Image
+        <img
           src="/champeye.webp"
           alt="OpenChamp Logo"
           height={48}
@@ -41,7 +41,7 @@ export default function Home() {
           alt="OpenChamp Logo"
           className="absolute opacity-25 blur-lg rounded-3xl select-text object-center"
         />
-        <Image
+        <img
           src="/champeye.webp"
           alt="OpenChamp Logo"
           height={420}
