@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -83,7 +82,7 @@ export default function Home() {
           </div>
 
           <div className="grid place-items-center">
-            <Image
+            <img
               src="/champeye.webp"
               alt="OpenChamp Logo"
               className="rounded-lg opacity-90"
