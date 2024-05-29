@@ -38,7 +38,7 @@ export default function Home() {
         <img
           src="/hero.webp"
           alt="OpenChamp Logo"
-          className="absolute opacity-25 blur-lg rounded-3xl select-text object-center"
+          className="absolute opacity-25 blur-lg rounded-3xl select-text object-fill h-full"
         />
         <img
           src="/champeye.webp"
@@ -86,11 +86,13 @@ export default function Home() {
               src="/champeye.webp"
               alt="OpenChamp Logo"
               className="rounded-lg opacity-90"
-              height={360}
-              width={360}
             />
           </div>
         </div>
+
+        <footer className="h-[600px] grid place-items-center">
+          I LIKE FEET
+        </footer>
       </div>
     </main>
   );
