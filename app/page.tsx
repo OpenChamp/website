@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
@@ -14,18 +13,22 @@ export default function Home() {
         <nav className="flex justify-center overflow-auto">
           <ul className="flex gap-12 font-bold text-sm tracking-wider text-stone-200">
             <li>
-              <a href="/">GAME</a>
+              <a href="/">GAME*</a>
             </li>
             <li>
-              <a href="/">PATCH NOTES</a>
+              <a href="/">PATCH NOTES*</a>
             </li>
             <li>
-              <a href="/">DEV BLOG</a>
+              <a href="/">DEV BLOG*</a>
             </li>
           </ul>
         </nav>
         <div className="flex justify-end">
-          <a href="https://discord.gg/D49KQesc">
+          <a
+            href="https://discord.gg/f6DGjvTWYT"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="px-4 py-2 bg-cyan-800 font-bold hover:bg-cyan-400 transition-all duration-300 hover:text-stone-800 rounded-lg">
               {/* DOWNLOAD */}
               DISCORD
@@ -38,7 +41,7 @@ export default function Home() {
         <img
           src="/hero.webp"
           alt="OpenChamp Logo"
-          className="absolute opacity-25 blur-lg rounded-3xl select-text object-fill h-full"
+          className="absolute opacity-25 blur-lg rounded-3xl select-text object-fill"
         />
         <img
           src="/champeye.webp"
@@ -49,7 +52,11 @@ export default function Home() {
         />
         <div className="grid place-items-center gap-8 z-10">
           <h1 className="text-5xl font-bold text-stone-200">OpenChamp</h1>
-          <a href="https://discord.gg/D49KQesc">
+          <a
+            href="https://discord.gg/f6DGjvTWYT"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="px-6 py-4 mt-4 text-stone-100 bg-[#b68236] font-bold border border-[#b99f4c] hover:bg-[#f3da8b] hover:text-stone-800 transition-all duration-300 hover:shadow-glow ">
               JOIN OUR DISCORD
             </button>
@@ -85,13 +92,58 @@ export default function Home() {
             <img
               src="/champeye.webp"
               alt="OpenChamp Logo"
-              className="rounded-lg opacity-90"
+              className="rounded-lg opacity-90 max-w-[400px] select-text"
             />
           </div>
         </div>
-
-        <footer className="h-[600px] grid place-items-center">FOOTER</footer>
       </div>
+      <footer className="h-[600px] grid place-items-center p-4 bg-stone-900">
+        <div className="flex flex-col gap-10 items-center">
+          <p className="text-stone-300 text-md max-w-xl text-center italic opacity-80 p-2">
+            *: Coming soon!
+          </p>
+          <div className="flex gap-4 items-center">
+            <a
+              href="https://discord.gg/f6DGjvTWYT"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="px-6 py-3 text-stone-100 bg-stone-800 font-bold hover:bg-[#f3da8b] hover:text-stone-800 transition-all duration-300">
+                JOIN OUR DISCORD
+              </button>
+            </a>
+            {/* Github */}
+            <a
+              href="https://github.com/OpenChamp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="px-6 py-3 text-stone-100 bg-green-800 font-bold hover:bg-green-400 hover:text-stone-800 transition-all duration-300">
+                GITHUB
+              </button>
+            </a>
+            <a
+              href="https://ko-fi.com/openchamp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="px-6 py-3 text-stone-100 bg-cyan-800 font-bold hover:bg-cyan-400 hover:text-stone-800 transition-all duration-300">
+                DONATE
+              </button>
+            </a>
+          </div>
+          <div className="flex items-center gap-2">
+            <img
+              src="/champeye.webp"
+              alt="OpenChamp Logo"
+              height={42}
+              width={42}
+              className=""
+            />
+            <h1 className="text-3xl font-bold text-stone-200">OpenChamp</h1>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
