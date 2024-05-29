@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
+import champEyeLogo from "../public/champ_eye.webp";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       <div className="items-center grid grid-cols-3 gap-8 p-4 px-8 bg-stone-900">
         <Image
-          src="/champ_eye.webp"
+          src={champEyeLogo}
           alt="OpenChamp Logo"
           height={48}
           width={48}
