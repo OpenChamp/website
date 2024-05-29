@@ -1,4 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css"; // Import the CSS
+import {
+  faDiscord,
+  faGithub,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { faHandHoldingDollar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+config.autoAddCss = false; // Tell FontAwesome to skip adding the CSS automatically since it's being imported above
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col relative">
@@ -114,7 +126,7 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               <button className="h-16 w-16 grid place-items-center rounded-lg aspect-square text-stone-100 bg-stone-800 font-bold hover:bg-[#f3da8b] hover:text-stone-800 transition-all duration-300">
-                <i className="fa-brands fa-discord text-3xl"></i>
+                <FontAwesomeIcon icon={faDiscord} size="2x" />
               </button>
             </a>
             {/* Github */}
@@ -124,7 +136,8 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               <button className="h-16 w-16 grid place-items-center rounded-lg aspect-square text-stone-100 bg-green-800 font-bold hover:bg-green-400 hover:text-stone-800 transition-all duration-300">
-                <i className="fa-brands fa-github text-3xl"></i>
+                {/* <i className="fa-brands fa-github text-3xl"></i> */}
+                <FontAwesomeIcon icon={faGithub} size="2x" />
               </button>
             </a>
             {/* Youtube */}
@@ -134,7 +147,8 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               <button className="h-16 w-16 grid place-items-center rounded-lg aspect-square text-stone-100 bg-red-800 font-bold hover:bg-red-400 hover:text-stone-800 transition-all duration-300">
-                <i className="fa-brands fa-youtube text-3xl"></i>
+                {/* <i className="fa-brands fa-youtube text-3xl"></i> */}
+                <FontAwesomeIcon icon={faYoutube} size="2x" />
               </button>
             </a>
             {/* Ko-fi */}
@@ -144,7 +158,8 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               <button className="h-16 w-16 grid place-items-center rounded-lg aspect-square text-stone-100 bg-cyan-800 font-bold hover:bg-cyan-400 hover:text-stone-800 transition-all duration-300">
-                <i className="fa-solid fa-hand-holding-dollar text-3xl"></i>
+                {/* <i className="fa-solid fa-hand-holding-dollar text-3xl"></i> */}
+                <FontAwesomeIcon icon={faHandHoldingDollar} size="2x" />
               </button>
             </a>
           </div>
