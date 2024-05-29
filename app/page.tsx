@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
-import champEyeLogo from "../public/champ_eye.webp";
+import champEyeLogo from "./champ_eye.webp";
 
 export default function Home() {
   return (
@@ -40,7 +40,7 @@ export default function Home() {
         <img
           src="/hero.webp"
           alt="OpenChamp Logo"
-          className="absolute opacity-25 blur-lg rounded-3xl select-text"
+          className="absolute opacity-25 blur-lg rounded-3xl select-text object-center"
         />
         <Image
           src="/champ_eye.webp"
