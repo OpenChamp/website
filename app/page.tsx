@@ -80,10 +80,10 @@ export default function Home() {
             </p>
             <div className="flex gap-8">
               <button className="px-6 py-4 text-stone-100 bg-[#b68236] font-bold border border-[#b99f4c] hover:bg-[#f3da8b] hover:text-stone-800 transition-all duration-300">
-                BROWSE CHAMPIONS
+                BROWSE CHAMPIONS*
               </button>
               <button className="px-6 py-4 text-stone-100 bg-cyan-800 font-bold hover:bg-cyan-400 hover:text-stone-800 transition-all duration-300">
-                PLAY
+                PLAY*
               </button>
             </div>
           </div>
