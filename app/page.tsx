@@ -62,7 +62,7 @@ export default function Home() {
             <img
               src="/champeye.webp"
               alt="OpenChamp Logo"
-              className="absolute opacity-50 blur-lg animate-spinSlow select-text max-h-[420px] max-w-[420px] w-full h-full"
+              className="absolute opacity-50 blur-lg animate-spinSlow select-text max-h-[420px] max-w-[420px] w-full h-full p-8"
             />
             <div className="grid place-items-center gap-8 z-10">
               <h1 className="text-5xl font-bold text-stone-200">OpenChamp</h1>
@@ -81,8 +81,8 @@ export default function Home() {
 
         {/* Features */}
         <div className="p-2 grid place-items-center h-screen xl:h-full bg-stone-950">
-          <div className="grid grid-cols-1 xl:grid-cols-2 p-8 gap-8">
-            <div className="grid gap-8 place-items-center">
+          <div className="grid grid-cols-1 xl:grid-cols-2 p-8 gap-8 place-items-center">
+            <div className="flex flex-col gap-8 items-center">
               <h2>
                 <span className="text-2xl font-medium text-[#b68236]">
                   EPIC
@@ -92,6 +92,7 @@ export default function Home() {
                   CHAMPIONS
                 </span>
               </h2>
+
               <p className="text-stone-500 text-lg max-w-xl">
                 From Blue Steve, to Red John. or something in between (purple
                 Bob?), we have every color of the champion rainbow.
@@ -136,7 +137,6 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               <button className="h-16 w-16 grid place-items-center rounded-lg aspect-square text-stone-100 bg-green-800 font-bold hover:bg-green-400 hover:text-stone-800 transition-all duration-300">
-                {/* <i className="fa-brands fa-github text-3xl"></i> */}
                 <FontAwesomeIcon icon={faGithub} size="2x" />
               </button>
             </a>
@@ -147,7 +147,6 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               <button className="h-16 w-16 grid place-items-center rounded-lg aspect-square text-stone-100 bg-red-800 font-bold hover:bg-red-400 hover:text-stone-800 transition-all duration-300">
-                {/* <i className="fa-brands fa-youtube text-3xl"></i> */}
                 <FontAwesomeIcon icon={faYoutube} size="2x" />
               </button>
             </a>
@@ -158,7 +157,6 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               <button className="h-16 w-16 grid place-items-center rounded-lg aspect-square text-stone-100 bg-cyan-800 font-bold hover:bg-cyan-400 hover:text-stone-800 transition-all duration-300">
-                {/* <i className="fa-solid fa-hand-holding-dollar text-3xl"></i> */}
                 <FontAwesomeIcon icon={faHandHoldingDollar} size="2x" />
               </button>
             </a>
