@@ -1,13 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
-import champEyeLogo from "./champ_eye.webp";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       <div className="items-center grid grid-cols-3 gap-8 p-4 px-8 bg-stone-900">
         <Image
-          src={champEyeLogo}
+          src="/champeye.webp"
           alt="OpenChamp Logo"
           height={48}
           width={48}
@@ -43,7 +42,7 @@ export default function Home() {
           className="absolute opacity-25 blur-lg rounded-3xl select-text object-center"
         />
         <Image
-          src="/champ_eye.webp"
+          src="/champeye.webp"
           alt="OpenChamp Logo"
           height={420}
           width={420}
@@ -85,7 +84,7 @@ export default function Home() {
 
           <div className="grid place-items-center">
             <Image
-              src="/champ_eye.webp"
+              src="/champeye.webp"
               alt="OpenChamp Logo"
               className="rounded-lg opacity-90"
               height={360}
