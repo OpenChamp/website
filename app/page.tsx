@@ -90,9 +90,7 @@ export default function Home() {
           </div>
         </div>
 
-        <footer className="h-[600px] grid place-items-center">
-          I LIKE FEET
-        </footer>
+        <footer className="h-[600px] grid place-items-center">FOOTER</footer>
       </div>
     </main>
   );
